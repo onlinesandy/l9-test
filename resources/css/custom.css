@@ -1,0 +1,72 @@
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+.fw-bold {
+    font-weight: bolder;
+}
+
+
+.tooltip_cust {
+    position: relative;
+}
+
+.tooltip_cust:before {
+    content: attr(aria-label);
+    /* here's the magic */
+    position: absolute;
+
+    /* vertically center */
+    top: -70%;
+    transform: translateY(-70%);
+
+    /* move to right */
+    left: -100%;
+    margin-left: 15px;
+    /* and add a small left margin */
+
+    /* basic styles */
+    width: auto;
+    padding: 5px;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+
+    display: none;
+}
+
+.tooltip_cust:hover:before {
+    display: block;
+}
+
+.tooltip_cust:after {
+    content: " ";
+    position: absolute;
+    top: -35%;
+    left: 56%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+
+    display: none;
+}
+
+.tooltip_cust:hover:before,
+.tooltip_cust:hover:after {
+    display: block;
+}

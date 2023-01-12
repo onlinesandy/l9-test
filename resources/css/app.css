@@ -1,0 +1,13 @@
+
+@import "../assets/css/bootstrap.css";
+@import "../assets/css/icons.min.css";
+@import "../assets/css/select2.min.css";
+@import "../assets/css/app.css";
+@import "../assets/css/custom.css";
+@import "../assets/libs/quill/quill.snow.css";
+@import "../assets/libs/sweetalert2/sweetalert2.min.css";
+
+
+
+@import "./custom.css";
+
